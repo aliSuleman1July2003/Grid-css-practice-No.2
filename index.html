@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+
+/*  mother grid */
+
+        .mother-grid{ 
+            display: grid;
+            grid-template-areas: "navbar navbar navbar"
+            "sectiona sectiona sectiona"
+            "sectionb sectionb sectionb"
+            "footer footer footer";
+        }
+
+        /*  navbar styling  */
+
+        #navbar{ 
+            grid-area:navbar;
+        }
+
+        #navbar ul{ 
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: 70px;
+            justify-content: space-around;
+            list-style-type: none;
+            background-color: #000000;
+             align-items:center;
+        }
+
+         #navbar a { 
+            text-decoration: none;
+            color: #ffffff;
+            font-family: monospace, sans-serif, helvetica;
+            font-weight: 700;
+          
+         }
+
+         /*  sectiona  */
+
+
+
+         .sectiona{ 
+            grid-area: sectiona;
+            display: grid;
+            grid-template-columns: repeat(4, 280px);
+           column-gap:2rem;
+           
+         }
+
+         .sectiona-cards{
+border: 0.12rem ridge #000000;
+border-radius: 1rem;
+padding: 0.8rem;
+background-color: #181818;
+color: #ffffff;
+
+         }
+
+         .sectiona-cards img{ 
+            height: 200px;
+            width:250px;
+            border-radius: 1rem;
+            
+         }
+
+         .sectiona-cards button {
+            background-color: #000000;
+         }
+
+         .sectiona-cards button a { 
+             text-decoration: none;
+            color: #ffffff;
+         }
+
+         /* section b  */
+         /*  sectiona  */
+
+         
+       
+
+         .sectionb{ 
+            grid-area: sectionb;
+            display: grid;
+            grid-template-columns: repeat(4, 280px);
+           column-gap:2rem;
+           
+         }
+
+         .sectionb-cards{
+border: 0.12rem ridge #000000;
+border-radius: 1rem;
+padding: 0.8rem;
+background-color: #181818;
+color: #ffffff;
+
+         }
+
+         .sectionb-cards img{ 
+            height: 200px;
+            width:250px;
+            border-radius: 1rem;
+            
+         }
+
+         .sectionb-cards button {
+            background-color: #000000;
+         }
+
+         .sectionb-cards button a { 
+             text-decoration: none;
+            color: #ffffff;
+         }
+
+         /* footer */
+
+          #footer{ 
+            grid-area:footer;
+        }
+
+        #footer ul{ 
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: 70px;
+            justify-content: space-around;
+            list-style-type: none;
+            background-color: #000000;
+             align-items:center;
+        }
+
+         #footer a { 
+            text-decoration: none;
+            color: #ffffff;
+            font-family: monospace, sans-serif, helvetica;
+            font-weight: 700;
+          
+         }
+
+       
+
+
+    </style>
+</head>
+<body>
+    
+<div class="mother-grid">
+    <!--  navbar -->
+<div id="navbar">
+    <ul>
+        <li><a href="">Products</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">About us</a></li>
+    </ul>
+</div>
+
+<!--  section a -->
+
+<div class="sectiona">
+
+
+
+<!-- 1 -->
+<div class="sectiona-cards">
+    <img src="sky.jpg" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+<!-- 2 -->
+<div class="sectiona-cards">
+    <img src="sky.jpg" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+<!-- 3 -->
+<div class="sectiona-cards">
+    <img src="sky.jpg" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+<!-- 4 -->
+<div class="sectiona-cards">
+    <img src="sky.jpg" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+</div>
+
+<!-- section b -->
+<!--  section a -->
+
+<div class="sectionb">
+
+
+
+<!-- 1 -->
+<div class="sectionb-cards">
+    <img src="sky2.webp" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+<!-- 2 -->
+<div class="sectionb-cards">
+    <img src="sky2.webp" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+<!-- 3 -->
+<div class="sectionb-cards">
+    <img src="sky2.webp" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+<!-- 4 -->
+<div class="sectionb-cards">
+    <img src="sky2.webp" alt="sky painting image">
+    <h3>Hand made painting</h3>
+    <p>best art</p>
+    <p>prize: 1000Pkr</p>
+    <button><a href="">Buy now</a></button>
+</div>
+
+</div>
+
+<!-- footer -->
+<footer id="footer">
+    <ul>
+        <li><a href="">Products</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">About us</a></li>
+    </ul>
+</footer>
+
+</div>
+
+</body>
+</html>
